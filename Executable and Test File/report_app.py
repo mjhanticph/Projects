@@ -49,7 +49,7 @@ filtered_df = df[(df['Date'] >= start_date) & (df['Date'] <= end_date) & (df['CL
 
 ### GETTING THE INFORMATION NEEDED FOR THE SUMMARY SHEET
 # Company Name
-name = filtered_df.loc[2,'CLIENT NAME']
+name = filtered_df.iloc[0]['CLIENT NAME']
 
 # Date extracted indicator
 # Get the current date and format it as a long date
